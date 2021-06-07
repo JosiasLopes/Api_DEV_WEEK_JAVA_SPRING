@@ -23,8 +23,8 @@ public class BootcampApplication {
 
 	//configura openapi
 	@Bean
-	public OpenAPI customOpenApi(@Value("${application.description}") String description){
-		OpenAPI info = new OpenAPI().info(new Info().title(description).version("1.0").termsOfService("http://swagger.io/terms").license(
+	public OpenAPI customOpenApi(){
+		OpenAPI info = new OpenAPI().info(new Info().title("sasas").version("1.0").termsOfService("http://swagger.io/terms").license(
 				new License().name("apache 2.0").url("http://springdoc.org")
 		));
 		return info;
